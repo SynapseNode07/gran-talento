@@ -1,26 +1,37 @@
+    <!-- Optimización de web  -->
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Gran Talento | El show de talentos juveniles</title>
+    <title>Mi Gran Talento | Show juvenil</title>
+
+    <!-- Optimización de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+
+    <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- JS optimizado -->
+    <script src="app.js" defer></script>
 </head>
 
 <body>
 
-    <!-- ==================== NAVBAR ==================== -->
+    <!-- NAV -->
     <header class="navbar">
-        <div class="nav-left">
-            <img src="img/apple-icon-57x57.png" alt="Mi Gran Talento Logo" class="logo-img">
-        </div>
-        <nav class="nav-links">
+        <img src="img/apple-icon-57x57.png" alt="Logo Mi Gran Talento" class="logo-img">
+
+        <nav class="nav-links" aria-label="Navegación principal">
             <a href="#inicio">Inicio</a>
-            <a href="#show">El Show</a>
+            <a href="#show">Show</a>
             <a href="#participantes">Participantes</a>
             <a href="#jurado">Jurado</a>
             <a href="#presentadores">Presentadores</a>
@@ -29,199 +40,108 @@
             <a href="#patrocinadores">Patrocinadores</a>
         </nav>
 
-        <div class="menu-toggle" id="menuToggle">
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
             <i class="fas fa-bars"></i>
-        </div>
+        </button>
     </header>
 
-    <!-- ==================== HERO / INICIO ==================== -->
-    <section id="inicio" class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <span class="hero-badge">Temporada 2025</span>
-            <h1>Descubre el <span class="gradient-text">Talento</span> que cambiará todo</h1>
-            <p>El show de competencias artísticas juveniles más emocionante. <br>Audiciones, galas en vivo y la gran
-                final.</p>
-            <div class="hero-buttons">
-                <a href="#votaciones" class="btn btn-primary"><i class="fas fa-heart"></i> Vota ahora</a>
-                <a href="#show" class="btn btn-outline"><i class="fas fa-play"></i> Conoce el show</a>
-            </div>
-        </div>
+    <main>
 
-        <div class="hero-stats">
-            <div class="stat">
-                <span class="stat-number">24</span>
-                <span class="stat-label">Participantes</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">8</span>
-                <span class="stat-label">Galas</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">50K+</span>
-                <span class="stat-label">Votaciones</span>
-            </div>
-        </div>
-    </section>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="hero-badge">Temporada 2025</span>
+                <h1>Descubre el <span class="gradient-text">Talento</span></h1>
+                <p>El show juvenil más emocionante.</p>
 
-    <!-- ==================== EL SHOW ==================== -->
-    <section id="show" class="section">
-        <div class="section-header">
-            <span class="section-tag">¿Cómo funciona?</span>
-            <h2>El <span class="gradient-text">Show</span></h2>
-            <p>Conoce el concepto, la dinámica y las etapas de Mi Gran Talento</p>
-        </div>
-
-        <div class="show-container">
-            <div class="show-info">
-                <p>Mi Gran Talento es un show de competencias artísticas juveniles que busca descubrir y proyectar
-                    nuevos talentos en las áreas de canto, baile, actuación y más.</p>
-                <div class="stages">
-                    <div class="stage">
-                        <div class="stage-icon">🎤</div>
-                        <h4>Audiciones</h4>
-                        <p>Selección de los participantes oficiales entre cientos de aspirantes.</p>
-                    </div>
-                    <div class="stage">
-                        <div class="stage-icon">📹</div>
-                        <h4>Preparación</h4>
-                        <p>Entrevistas, backstage y presentación de perfiles.</p>
-                    </div>
-                    <div class="stage">
-                        <div class="stage-icon">✨</div>
-                        <h4>Galas en vivo</h4>
-                        <p>Presentaciones ante jurado y votación del público.</p>
-                    </div>
-                    <div class="stage">
-                        <div class="stage-icon">🏆</div>
-                        <h4>Gran Final</h4>
-                        <p>Definición del gran ganador de Mi Gran Talento.</p>
-                    </div>
+                <div class="hero-buttons">
+                    <a href="#votaciones" class="btn btn-primary">❤️ Votar</a>
+                    <a href="#show" class="btn btn-outline">▶ Ver show</a>
                 </div>
             </div>
-            <div class="show-video">
-                <div class="video-placeholder">
-                    <i class="fas fa-play-circle"></i>
-                    <p>Video promocional</p>
-                </div>
+
+            <div class="hero-stats">
+                <div><strong>24</strong><span>Participantes</span></div>
+                <div><strong>8</strong><span>Galas</span></div>
+                <div><strong>50K+</strong><span>Votos</span></div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==================== PARTICIPANTES ==================== -->
-    <section id="participantes" class="section alt">
-        <div class="section-header">
-            <span class="section-tag">Los protagonistas</span>
-            <h2>👥 Participantes</h2>
-            <p>Conoce a los talentos que están compitiendo por el gran premio</p>
-        </div>
-        <div id="lista-participantes" class="grid"></div>
-    </section>
+        <!-- SHOW -->
+        <section id="show" class="section">
+            <header class="section-header">
+                <span class="section-tag">¿Cómo funciona?</span>
+                <h2>El Show</h2>
+            </header>
 
-    <!-- ==================== JURADO ==================== -->
-    <section id="jurado" class="section">
-        <div class="section-header">
-            <span class="section-tag">Los expertos</span>
-            <h2>⭐ Jurado</h2>
-            <p>Profesionales que evalúan y guían a los participantes</p>
-        </div>
-        <div id="lista-jurado" class="grid"></div>
-    </section>
+            <p>
+                Competencia juvenil de canto, baile y actuación.
+            </p>
+        </section>
 
-    <!-- ==================== PRESENTADORES ==================== -->
-    <section id="presentadores" class="section alt">
-        <div class="section-header">
-            <span class="section-tag">Los anfitriones</span>
-            <h2>🎤 Presentadores</h2>
-            <p>Los rostros que te guiarán durante toda la temporada</p>
-        </div>
-        <div id="lista-presentadores" class="grid"></div>
-    </section>
+        <!-- PARTICIPANTES -->
+        <section id="participantes" class="section alt">
+            <header class="section-header">
+                <h2>Participantes</h2>
+            </header>
+            <div id="lista-participantes" class="grid"></div>
+        </section>
 
-    <!-- ==================== VOTACIONES ==================== -->
-    <section id="votaciones" class="section votaciones-section">
-        <div class="section-header">
-            <span class="section-tag">Apoya a tu favorito</span>
-            <h2>🗳️ Votaciones</h2>
-            <p>Tu voto es clave. ¡Apoya a tu participante favorito!</p>
-        </div>
+        <!-- JURADO -->
+        <section id="jurado" class="section">
+            <header class="section-header">
+                <h2>Jurado</h2>
+            </header>
+            <div id="lista-jurado" class="grid"></div>
+        </section>
 
-        <div class="votaciones-container">
-            <div class="ranking-box">
-                <h3><i class="fas fa-trophy"></i> Ranking en vivo</h3>
-                <div id="ranking" class="ranking-list"></div>
+        <!-- PRESENTADORES -->
+        <section id="presentadores" class="section alt">
+            <header class="section-header">
+                <h2>Presentadores</h2>
+            </header>
+            <div id="lista-presentadores" class="grid"></div>
+        </section>
+
+        <!-- VOTACIONES -->
+        <section id="votaciones" class="section">
+            <header class="section-header">
+                <h2>Votaciones</h2>
+            </header>
+
+            <div id="ranking"></div>
+        </section>
+
+        <!-- CONTENIDO -->
+        <section id="contenido" class="section">
+            <header class="section-header">
+                <h2>Contenido</h2>
+            </header>
+
+            <div class="contenido-tabs">
+                <button data-tab="videos">Videos</button>
+                <button data-tab="backstage">Backstage</button>
+                <button data-tab="entrevistas">Entrevistas</button>
             </div>
-            <div class="votacion-info">
-                <div class="info-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h4>¿Cómo funciona?</h4>
-                    <p>La votación del público representa el 50% de la puntuación final, combinada con la evaluación del
-                        jurado.</p>
-                    <a href="#" class="btn-small">Más información</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ==================== CONTENIDO MULTIMEDIA ==================== -->
-    <section id="contenido" class="section">
-        <div class="section-header">
-            <span class="section-tag">Detrás del show</span>
-            <h2>📹 Contenido Exclusivo</h2>
-            <p>Videos, backstage, entrevistas y los mejores momentos</p>
-        </div>
+            <div id="contenido-galeria" class="grid"></div>
+        </section>
 
-        <div class="contenido-tabs">
-            <button class="tab-btn active" data-tab="videos">🎬 Videos destacados</button>
-            <button class="tab-btn" data-tab="backstage">🎥 Backstage</button>
-            <button class="tab-btn" data-tab="entrevistas">🎙️ Entrevistas</button>
-        </div>
+        <!-- PATROCINADORES -->
+        <section id="patrocinadores" class="section alt">
+            <header class="section-header">
+                <h2>Patrocinadores</h2>
+            </header>
+            <div id="lista-patrocinadores"></div>
+        </section>
 
-        <div id="contenido-galeria" class="grid contenido-grid"></div>
-    </section>
+    </main>
 
-    <!-- ==================== PATROCINADORES ==================== -->
-    <section id="patrocinadores" class="section alt">
-        <div class="section-header">
-            <span class="section-tag">Aliados estratégicos</span>
-            <h2>🤝 Patrocinadores</h2>
-            <p>Empresas que hacen posible Mi Gran Talento</p>
-        </div>
-        <div id="lista-patrocinadores" class="patrocinadores-grid"></div>
-    </section>
-
-    <!-- ==================== FOOTER ==================== -->
+    <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Mi Gran Talento</h3>
-                <p>Descubriendo y proyectando nuevos talentos juveniles desde 2024.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-tiktok"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-            <div class="footer-section">
-                <h4>Enlaces rápidos</h4>
-                <a href="#inicio">Inicio</a>
-                <a href="#show">El Show</a>
-                <a href="#votaciones">Votaciones</a>
-                <a href="#contenido">Contenido</a>
-            </div>
-            <div class="footer-section">
-                <h4>Contacto</h4>
-                <p><i class="fas fa-envelope"></i> info@migrantatalento.com</p>
-                <p><i class="fas fa-phone"></i> +56 2 1234 5678</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Mi Gran Talento. Todos los derechos reservados.</p>
-        </div>
+        <p>&copy; 2025 Mi Gran Talento</p>
     </footer>
 
-    <script src="app.js"></script>
 </body>
 
 </html>
