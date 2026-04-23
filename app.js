@@ -3,7 +3,7 @@
 // Participantes
 const participantes = [
     { id: 1, nombre: "Sofía Castillo", edad: 16, talento: "Canto", bio: "Sofía tiene una voz privilegiada que ha cautivado a todos desde su primera audición. Influenciada por el pop y el soul, promete emocionar en cada gala.", votos: 12450 },
-    { id: 2, nombre: "Mateo Reyes", edad: 17, talento: "Baile Urbano", bio: "Campeón regional de breaking, Mateo trae energía y creatividad al escenario. Sus coreografías son únicas.", votos: 9870 },
+    { id: 2, nombre: "Valentino bonilla", edad: 17, talento: "Baile Urbano", bio: "Campeón regional de breaking, Mateo trae energía y creatividad al escenario. Sus coreografías son únicas.", votos: 9870 },
     { id: 3, nombre: "Valentina Muñoz", edad: 15, talento: "Actuación", bio: "Esta joven actriz ha participado en obras de teatro escolar y ahora busca conquistar la pantalla chica.", votos: 15320 },
     { id: 4, nombre: "Lucas Fuentes", edad: 18, talento: "Guitarra", bio: "Compositor y multiinstrumentista, Lucas es un prodigio de la música que escribe sus propias canciones.", votos: 7650 },
     { id: 5, nombre: "Camila Rojas", edad: 14, talento: "Pintura en vivo", bio: "Camila crea arte en tiempo real, sorprendiendo con sus habilidades pictóricas frente al público.", votos: 5430 },
